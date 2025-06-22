@@ -25,3 +25,14 @@ html{
 body{
   background-color: var(--color-fondo);
 }
+
+.nowrap-text {
+  white-space: nowrap;
+}
+
+/* Opcional: para asegurarte de que el texto no se desborde en móviles muy pequeños */
+@media (max-width: 400px) {
+  .nowrap-text {
+    font-size: 0.9rem;
+  }
+}
