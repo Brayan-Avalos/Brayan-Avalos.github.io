@@ -930,9 +930,6 @@
           </div>
           <div>
             <form
-              action="https://formspree.io/f/xovwkvon"
-              method="POST"
-              name="contact"
               id="ContactForm"
               class="contact__form grid justify-content-center"
             >
@@ -944,6 +941,7 @@
                     type="text"
                     id="name"
                     class="contact__name"
+                    required
                   />
                 </div>
                 <div class="contact__content">
@@ -953,6 +951,7 @@
                     type="email"
                     id="email"
                     class="contact__email"
+                    required
                   />
                 </div>
               </div>
@@ -964,13 +963,12 @@
                   cols="0"
                   rows="7"
                   class="contact__msg"
+                  required
                 ></textarea>
               </div>
-              <div data-netlify-recaptcha="true"></div>
               <div>
                 <button
                   type="submit"
-                  name="submit"
                   class="btn btn-primary p-3 me-3 SubTitulos"
                   id="submitButton"
                   style="font-size: 0.9rem"
@@ -979,8 +977,7 @@
                   <i
                     class="bi bi-caret-right-fill ms-3"
                     style="font-size: 0.9rem"
-                  >
-                  </i>
+                  ></i>
                 </button>
               </div>
               <div id="status" class="success"></div>
@@ -1003,6 +1000,49 @@
     </section>
     <!-- ======== Cierre para tablets y computadoras ======== -->
 
+    <script>
+      document
+        .getElementById("ContactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Mostrar estado de carga
+          const submitButton = document.getElementById("submitButton");
+          submitButton.disabled = true;
+          submitButton.innerHTML =
+            'Enviando... <i class="bi bi-arrow-repeat ms-3" style="font-size: 0.9rem"></i>';
+
+          // Enviar datos a Formspree
+          fetch("https://formspree.io/f/xovwkvon", {
+            method: "POST",
+            body: new FormData(this),
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                document.getElementById("status").innerHTML =
+                  "¡Mensaje enviado con éxito!";
+                document.getElementById("status").style.color = "green";
+                document.getElementById("ContactForm").reset();
+              } else {
+                throw new Error("Error al enviar el formulario");
+              }
+            })
+            .catch((error) => {
+              document.getElementById("status").innerHTML =
+                "Hubo un error al enviar el mensaje. Por favor inténtalo de nuevo.";
+              document.getElementById("status").style.color = "red";
+              console.error("Error:", error);
+            })
+            .finally(() => {
+              submitButton.disabled = false;
+              submitButton.innerHTML =
+                'Enviar mensaje <i class="bi bi-caret-right-fill ms-3" style="font-size: 0.9rem"></i>';
+            });
+        });
+    </script>
     <!-- JavaScript with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
