@@ -159,11 +159,28 @@ p {
 
 /* Sección Sobre Mí */
 
+.sobreMi_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 #sobreMi {
   padding-top: 5rem;
 }
 
+.img-sobreMi {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .sobreMi-data {
+  flex: 1;
   padding-left: 5rem;
 }
 
@@ -180,6 +197,23 @@ p {
 
 .img-sobreMi-estilo {
   border-radius: 10px;
+}
+
+/* Estilo para el botón de idioma */
+.btn-outline-primary {
+  color: #7D0AB3;
+  border-color: #7D0AB3;
+}
+
+.btn-outline-primary:hover {
+  background-color: #7D0AB3;
+  color: white;
+}
+
+#languageToggle, #languageToggleDesktop {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-family: var(--fuente-titulos);
 }
 
 /* Sección Habilidades */

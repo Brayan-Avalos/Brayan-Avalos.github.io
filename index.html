@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Mi portafolio</title>
+    <title data-translate="page-title">Mi portafolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- CDN - Bootstrap -->
@@ -29,6 +29,18 @@
   <body>
     <!-- ========= Developer profile -->
     <header class="container-fluid px-5 pt-5">
+      <!-- header para móviles -->
+      <div class="row d-block d-md-none justify-content-center mb-3">
+        <div class="col-12 d-flex justify-content-center">
+          <button
+            id="languageToggle"
+            class="btn btn-outline-primary"
+            data-translate="language-toggle"
+          >
+            <i class="bi bi-translate"></i> Español/English
+          </button>
+        </div>
+      </div>
       <!-- Blank space -->
       <div class="row d-block d-md-none mb-5">
         <div class="d-flex justify-content-end"></div>
@@ -91,10 +103,11 @@
         >
           <div class="d-flex justify-content-center">
             <a
-              href="pdf/DeveloperCV.pdf"
+              href="pdf/DeveloperCV_es.pdf"
               download
               rel="noopener noreferrer"
               target="_blank"
+              data-cv-link
             >
               <button
                 type="button"
@@ -125,6 +138,7 @@
               role="tab"
               aria-controls="nav-proyectos"
               aria-selected="true"
+              data-translate="mobile-projects"
             >
               Proyectos
             </button>
@@ -138,6 +152,7 @@
               role="tab"
               aria-controls="nav-habilidades"
               aria-selected="false"
+              data-translate="mobile-skills"
             >
               Habilidades
             </button>
@@ -167,6 +182,7 @@
                     type="button"
                     name="button"
                     class="btn btn-primary rounded-pill"
+                    data-translate="view-project"
                   >
                     <i class="bi bi-link"></i>
                   </button>
@@ -185,6 +201,7 @@
                     type="button"
                     name="button"
                     class="btn btn-primary rounded-pill"
+                    data-translate="view-project"
                   >
                     <i class="bi bi-link"></i>
                   </button>
@@ -209,6 +226,7 @@
                       type="button"
                       name="button"
                       class="btn btn-primary rounded-pill"
+                      data-translate="view-project"
                     >
                       <i class="bi bi-link"></i>
                     </button>
@@ -229,6 +247,7 @@
                       type="button"
                       name="button"
                       class="btn btn-primary rounded-pill"
+                      data-translate="view-project"
                     >
                       <i class="bi bi-link"></i>
                     </button>
@@ -261,7 +280,11 @@
                         </i>
                         <div>
                           <h3 class="skills__name">HTML</h3>
-                          <span class="skills__level">Intermedio</span>
+                          <span
+                            class="skills__level"
+                            data-translate="intermediate-level"
+                            >Intermedio</span
+                          >
                         </div>
                       </div>
 
@@ -274,7 +297,11 @@
 
                         <div>
                           <h3 class="skills__name">CSS</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
 
@@ -287,7 +314,11 @@
 
                         <div>
                           <h3 class="skills__name">JavaScript</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -302,7 +333,11 @@
 
                         <div>
                           <h3 class="skills__name">Vue</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
 
@@ -315,7 +350,11 @@
 
                         <div>
                           <h3 class="skills__name">Bootstrap</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
 
@@ -328,7 +367,11 @@
 
                         <div>
                           <h3 class="skills__name">Git</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -351,7 +394,11 @@
 
                         <div>
                           <h3 class="skills__name">PHP</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
 
@@ -364,7 +411,11 @@
 
                         <div>
                           <h3 class="skills__name">MySQL</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -379,7 +430,11 @@
 
                         <div>
                           <h3 class="skills__name">Python</h3>
-                          <span class="skills__level">Básico</span>
+                          <span
+                            class="skills__level"
+                            data-translate="basic-level"
+                            >Básico</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -406,7 +461,11 @@
 
                           <div>
                             <h3 class="skills__name">HTML</h3>
-                            <span class="skills__level">Intermedio</span>
+                            <span
+                              class="skills__level"
+                              data-translate="intermediate-level"
+                              >Intermedio</span
+                            >
                           </div>
                         </div>
 
@@ -419,7 +478,11 @@
 
                           <div>
                             <h3 class="skills__name">CSS</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
 
@@ -432,7 +495,11 @@
 
                           <div>
                             <h3 class="skills__name">JavaScript</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
                       </div>
@@ -447,7 +514,11 @@
 
                           <div>
                             <h3 class="skills__name">Vue</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
 
@@ -460,7 +531,11 @@
 
                           <div>
                             <h3 class="skills__name">Bootstrap</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
 
@@ -473,7 +548,11 @@
 
                           <div>
                             <h3 class="skills__name">Git</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
                       </div>
@@ -496,7 +575,11 @@
 
                           <div>
                             <h3 class="skills__name">PHP</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
 
@@ -509,7 +592,11 @@
 
                           <div>
                             <h3 class="skills__name">MySQL</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
                       </div>
@@ -524,7 +611,11 @@
 
                           <div>
                             <h3 class="skills__name">Python</h3>
-                            <span class="skills__level">Básico</span>
+                            <span
+                              class="skills__level"
+                              data-translate="basic-level"
+                              >Básico</span
+                            >
                           </div>
                         </div>
                       </div>
@@ -561,15 +652,41 @@
           <a class="TituloBrand" href="#"> Brayan </a>
 
           <div class="navbar-nav">
-            <a class="TitulosNav" href="#"> Inicio </a>
+            <a class="TitulosNav" href="#" data-translate="nav-home">
+              Inicio
+            </a>
 
-            <a class="TitulosNav" href="#sobreMi"> Sobre mí </a>
+            <a class="TitulosNav" href="#sobreMi" data-translate="nav-about">
+              Sobre mí
+            </a>
 
-            <a class="TitulosNav" href="#habilidades"> Habilidades </a>
+            <a
+              class="TitulosNav"
+              href="#habilidades"
+              data-translate="nav-skills"
+            >
+              Habilidades
+            </a>
 
-            <a class="TitulosNav" href="#proyectos"> Proyectos </a>
+            <a
+              class="TitulosNav"
+              href="#proyectos"
+              data-translate="nav-projects"
+            >
+              Proyectos
+            </a>
 
-            <a class="TitulosNav" href="#contacto"> Contacto </a>
+            <a class="TitulosNav" href="#contacto" data-translate="nav-contact">
+              Contacto
+            </a>
+
+            <button
+              id="languageToggleDesktop"
+              class="btn btn-outline-primary ms-3"
+              data-translate="language-toggle"
+            >
+              <i class="bi bi-translate"></i> ES/EN
+            </button>
           </div>
         </div>
       </nav>
@@ -600,12 +717,17 @@
 
         <div class="w-75 d-flex pt-4 py-5 mb-5">
           <div class="w-50">
-            <h1 class="TituloQuienSoy">Hola, soy</h1>
+            <h1 class="TituloQuienSoy" data-translate="hello">Hola, soy</h1>
             <h1 class="TituloQuienSoy">
               Brayan <i class="bi bi-code-slash"></i>
             </h1>
-            <h2 class="SubTitulosQuienSoy text-start">Back-End Developer</h2>
-            <p class="ParrafoQuienSoy text-start pe-5">
+            <h2 class="SubTitulosQuienSoy text-start" data-translate="title">
+              Back-End Developer
+            </h2>
+            <p
+              class="ParrafoQuienSoy text-start pe-5"
+              data-translate="description"
+            >
               Desarrollador Back-End, conocedor en el uso de diferentes
               tecnologías y gran apasionado de la programación.
             </p>
@@ -616,6 +738,7 @@
                 name="button"
                 class="btn btn-primary p-3 me-3 SubTitulos"
                 style="font-size: 0.9rem"
+                data-translate="contact-button"
               >
                 Contactame
                 <i
@@ -637,7 +760,7 @@
       </div>
 
       <!-- Sección Sobre mí -->
-      <h2 id="sobreMi">Sobre mí</h2>
+      <h2 id="sobreMi" data-translate="about-title">Sobre mí</h2>
       <div
         id="inicio"
         class="mx-5 py-5 d-flex"
@@ -652,7 +775,7 @@
             />
           </div>
           <div class="sobreMi-data w-50">
-            <p>
+            <p data-translate="about-text">
               Me llamo Brayan.<br />
               Empecé con el desarrollo web hace 2 años, poco después de inicar
               mi carrera de desarrollador. Desde entonces hice varios proyectos
@@ -661,19 +784,26 @@
             <div class="sobreMi-info">
               <div class="sobreMi-info-box">
                 <span class="Titulo d-block text-center">1</span>
-                <span class="SubTitulos d-block text-center"
+                <span
+                  class="SubTitulos d-block text-center"
+                  data-translate="years-exp"
                   >Años de trabajo
                 </span>
               </div>
               <div class="sobreMi-info-box">
                 <span class="Titulo d-block text-center">3</span>
-                <span class="SubTitulos d-block text-center"
+                <span
+                  class="SubTitulos d-block text-center"
+                  data-translate="projects-completed"
                   >Proyectos completados
                 </span>
               </div>
               <div class="sobreMi-info-box">
                 <span class="Titulo d-block text-center">2</span>
-                <span class="SubTitulos d-block text-center">
+                <span
+                  class="SubTitulos d-block text-center"
+                  data-translate="happy-clients"
+                >
                   Clientes satisfechos
                 </span>
               </div>
@@ -681,16 +811,18 @@
 
             <div class="d-flex justify-content-center">
               <a
-                href="pdf/DeveloperCV.pdf"
+                href="pdf/DeveloperCV_es.pdf"
                 download
                 rel="noopener noreferrer"
                 target="_blank"
+                data-cv-link
               >
                 <button
                   type="button"
                   name="button"
                   class="btn btn-primary p-3 me-3 SubTitulos"
                   style="font-size: 0.9rem"
+                  data-translate="download-cv"
                 >
                   Descargar CV
                   <i class="bi bi-download" style="font-size: 0.9rem"></i>
@@ -703,7 +835,7 @@
 
       <!-- Habilidades -->
 
-      <h2 id="habilidades">Habilidades</h2>
+      <h2 id="habilidades" data-translate="skills-title">Habilidades</h2>
       <div
         class="mx-5 py-5 d-flex justify-content-center"
         style="margin-top: 100px; margin-bottom: 100px"
@@ -711,7 +843,9 @@
         <!-- Desarrollo Frontend -->
         <div class="d-flex justify-content-center">
           <div class="skills__area">
-            <h3 class="skills__title">Desarrollo Frontend</h3>
+            <h3 class="skills__title" data-translate="frontend-title">
+              Desarrollo Frontend
+            </h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -723,7 +857,11 @@
 
                   <div>
                     <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Intermedio</span>
+                    <span
+                      class="skills__level"
+                      data-translate="intermediate-level"
+                      >Intermedio</span
+                    >
                   </div>
                 </div>
 
@@ -735,7 +873,9 @@
 
                   <div>
                     <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
 
@@ -748,7 +888,9 @@
 
                   <div>
                     <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
               </div>
@@ -763,7 +905,9 @@
 
                   <div>
                     <h3 class="skills__name">Vue</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
 
@@ -776,7 +920,9 @@
 
                   <div>
                     <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
 
@@ -789,7 +935,9 @@
 
                   <div>
                     <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
               </div>
@@ -801,7 +949,9 @@
 
         <div class="d-flex justify-content-center">
           <div class="skills__area">
-            <h3 class="skills__title">Desarrollo Backend</h3>
+            <h3 class="skills__title" data-translate="backend-title">
+              Desarrollo Backend
+            </h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -814,7 +964,9 @@
 
                   <div>
                     <h3 class="skills__name">PHP</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
 
@@ -827,7 +979,9 @@
 
                   <div>
                     <h3 class="skills__name">MySQL</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
               </div>
@@ -842,7 +996,9 @@
 
                   <div>
                     <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Básico</span>
+                    <span class="skills__level" data-translate="basic-level"
+                      >Básico</span
+                    >
                   </div>
                 </div>
               </div>
@@ -853,7 +1009,7 @@
 
       <!-- Sección Proyectos -->
 
-      <h2 id="proyectos">Proyectos</h2>
+      <h2 id="proyectos" data-translate="projects-title">Proyectos</h2>
       <div
         class="mx-5 py-5 d-flex justify-content-center"
         style="margin-top: 100px; margin-bottom: 100px"
@@ -864,12 +1020,19 @@
             style="width: 400px; height: 200px"
           ></div>
           <div class="text-light position-absolute mt-5">
-            <h4 class="SubTitulos" style="font-size: 1rem">Sitio web</h4>
+            <h4
+              class="SubTitulos"
+              style="font-size: 1rem"
+              data-translate="website-type"
+            >
+              Sitio web
+            </h4>
             <h3 class="Titulo">NOM035</h3>
             <button
               type="button"
               name="button"
               class="btn btn-primary rounded-pill"
+              data-translate="view-project"
             >
               <i class="bi bi-link"></i>
             </button>
@@ -882,12 +1045,19 @@
             style="width: 400px; height: 200px"
           ></div>
           <div class="text-light position-absolute mt-5">
-            <h4 class="SubTitulos" style="font-size: 1rem">Sitio web</h4>
+            <h4
+              class="SubTitulos"
+              style="font-size: 1rem"
+              data-translate="website-type"
+            >
+              Sitio web
+            </h4>
             <h3 class="Titulo">AduanaWeb</h3>
             <button
               type="button"
               name="button"
               class="btn btn-primary rounded-pill"
+              data-translate="view-project"
             >
               <i class="bi bi-link"></i>
             </button>
@@ -897,7 +1067,7 @@
 
       <!-- Sección Contacto -->
 
-      <h2 id="contacto">Contacto</h2>
+      <h2 id="contacto" data-translate="contact-title">Contacto</h2>
       <div
         class="mx-5 py-5 d-flex justify-content-center"
         style="margin-top: 100px; margin-bottom: 100px"
@@ -907,7 +1077,7 @@
             <div class="d-flex grid mb-3">
               <i class="bi bi-envelope"></i>
               <div class="d-block">
-                <h3 class="Titulo">Correo</h3>
+                <h3 class="Titulo" data-translate="email-label">Correo</h3>
                 <span class="SubTitulos">brayanavalos034@hotmail.com</span>
               </div>
             </div>
@@ -915,7 +1085,9 @@
               <i class="bi bi-geo-alt"></i>
 
               <div class="d-block">
-                <h3 class="Titulo">Ubicación</h3>
+                <h3 class="Titulo" data-translate="location-label">
+                  Ubicación
+                </h3>
                 <span class="SubTitulos">México</span>
               </div>
             </div>
@@ -927,7 +1099,12 @@
             >
               <div class="grid">
                 <div class="contact__content">
-                  <label for="" class="SubTitulos">Nombre</label>
+                  <label
+                    for=""
+                    class="SubTitulos"
+                    data-translate="name-placeholder"
+                    >Nombre</label
+                  >
                   <input
                     name="name"
                     type="text"
@@ -937,7 +1114,12 @@
                   />
                 </div>
                 <div class="contact__content">
-                  <label for="" class="SubTitulos">Correo</label>
+                  <label
+                    for=""
+                    class="SubTitulos"
+                    data-translate="email-placeholder"
+                    >Correo</label
+                  >
                   <input
                     name="email"
                     type="email"
@@ -948,7 +1130,12 @@
                 </div>
               </div>
               <div class="contact__content">
-                <label for="" class="SubTitulos">Mensajes</label>
+                <label
+                  for=""
+                  class="SubTitulos"
+                  data-translate="message-placeholder"
+                  >Mensajes</label
+                >
                 <textarea
                   name="message"
                   id="msg"
@@ -964,6 +1151,7 @@
                   class="btn btn-primary p-3 me-3 SubTitulos"
                   id="submitButton"
                   style="font-size: 0.9rem"
+                  data-translate="send-button"
                 >
                   Enviar mensaje
                   <i
@@ -980,10 +1168,11 @@
 
       <div class="d-flex justify-content-center">
         <p class="text-light SubTitulos">
-          Este sitio web está bajo la
+          <span data-translate="license-text">Este sitio web está bajo la</span>
           <a
             href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
             class="Links"
+            data-translate="license-link"
           >
             Licencia Pública General de GNU 2.0
           </a>
@@ -993,6 +1182,127 @@
     <!-- ======== Cierre para tablets y computadoras ======== -->
 
     <script>
+      const translations = {
+        es: {
+          // General
+          "page-title": "Mi portafolio",
+          "language-toggle": "Español/English",
+
+          // Header/Nav
+          "nav-home": "Inicio",
+          "nav-about": "Sobre mí",
+          "nav-skills": "Habilidades",
+          "nav-projects": "Proyectos",
+          "nav-contact": "Contacto",
+          "mobile-projects": "Proyectos",
+          "mobile-skills": "Habilidades",
+
+          // Hero Section
+          hello: "Hola, soy",
+          title: "Back-End Developer",
+          description:
+            "Desarrollador Back-End, conocedor en el uso de diferentes tecnologías y gran apasionado de la programación.",
+          "contact-button": "Contáctame",
+
+          // About Section
+          "about-title": "Sobre mí",
+          "about-text":
+            "Me llamo Brayan.<br />Empecé con el desarrollo web hace 2 años, poco después de iniciar mi carrera de desarrollador. Desde entonces hice varios proyectos y aprendí otras tantas tecnologías.",
+          "years-exp": "Años de trabajo",
+          "projects-completed": "Proyectos completados",
+          "happy-clients": "Clientes satisfechos",
+          "download-cv": "Descargar CV",
+
+          // Skills Section
+          "skills-title": "Habilidades",
+          "frontend-title": "Desarrollo Frontend",
+          "backend-title": "Desarrollo Backend",
+          "basic-level": "Básico",
+          "intermediate-level": "Intermedio",
+          "advanced-level": "Avanzado",
+
+          // Projects Section
+          "projects-title": "Proyectos",
+          "website-type": "Sitio web",
+          "view-project": "Ver proyecto",
+
+          // Contact Section
+          "contact-title": "Contacto",
+          "email-label": "Correo",
+          "location-label": "Ubicación",
+          "name-placeholder": "Nombre",
+          "email-placeholder": "Correo",
+          "message-placeholder": "Mensaje",
+          "send-button": "Enviar mensaje",
+          "success-message": "¡Mensaje enviado con éxito!",
+          "error-message":
+            "Hubo un error al enviar el mensaje. Por favor inténtalo de nuevo.",
+
+          // Footer
+          "license-text": "Este sitio web está bajo la",
+          "license-link": "Licencia Pública General de GNU 2.0",
+        },
+        en: {
+          // General
+          "page-title": "My Portfolio",
+          "language-toggle": "Spanish/English",
+
+          // Header/Nav
+          "nav-home": "Home",
+          "nav-about": "About me",
+          "nav-skills": "Skills",
+          "nav-projects": "Projects",
+          "nav-contact": "Contact",
+          "mobile-projects": "Projects",
+          "mobile-skills": "Skills",
+
+          // Hero Section
+          hello: "Hello, I'm",
+          title: "Back-End Developer",
+          description:
+            "Back-End developer, knowledgeable in different technologies and passionate about programming.",
+          "contact-button": "Contact me",
+
+          // About Section
+          "about-title": "About me",
+          "about-text":
+            "My name is Brayan.<br />I started web development 2 years ago, shortly after beginning my developer career. Since then I've completed several projects and learned many technologies.",
+          "years-exp": "Years of experience",
+          "projects-completed": "Completed projects",
+          "happy-clients": "Happy clients",
+          "download-cv": "Download CV",
+
+          // Skills Section
+          "skills-title": "Skills",
+          "frontend-title": "Frontend Development",
+          "backend-title": "Backend Development",
+          "basic-level": "Basic",
+          "intermediate-level": "Intermediate",
+          "advanced-level": "Advanced",
+
+          // Projects Section
+          "projects-title": "Projects",
+          "website-type": "Website",
+          "view-project": "View project",
+
+          // Contact Section
+          "contact-title": "Contact",
+          "email-label": "Email",
+          "location-label": "Location",
+          "name-placeholder": "Name",
+          "email-placeholder": "Email",
+          "message-placeholder": "Message",
+          "send-button": "Send message",
+          "success-message": "Message sent successfully!",
+          "error-message":
+            "There was an error sending your message. Please try again.",
+
+          // Footer
+          "license-text": "This website is under the",
+          "license-link": "GNU General Public License 2.0",
+        },
+      };
+
       document
         .getElementById("ContactForm")
         .addEventListener("submit", function (e) {
@@ -1000,9 +1310,9 @@
 
           // Mostrar estado de carga
           const submitButton = document.getElementById("submitButton");
+          const lang = document.documentElement.lang;
           submitButton.disabled = true;
-          submitButton.innerHTML =
-            'Enviando... <i class="bi bi-arrow-repeat ms-3" style="font-size: 0.9rem"></i>';
+          submitButton.innerHTML = `${translations[lang]["send-button"]} <i class="bi bi-arrow-repeat ms-3" style="font-size: 0.9rem"></i>`;
 
           // Enviar datos a Formspree
           fetch("https://formspree.io/f/xovwkvon", {
@@ -1015,7 +1325,7 @@
             .then((response) => {
               if (response.ok) {
                 document.getElementById("status").innerHTML =
-                  "¡Mensaje enviado con éxito!";
+                  translations[lang]["success-message"];
                 document.getElementById("status").style.color = "green";
                 document.getElementById("ContactForm").reset();
               } else {
@@ -1024,16 +1334,71 @@
             })
             .catch((error) => {
               document.getElementById("status").innerHTML =
-                "Hubo un error al enviar el mensaje. Por favor inténtalo de nuevo.";
+                translations[lang]["error-message"];
               document.getElementById("status").style.color = "red";
               console.error("Error:", error);
             })
             .finally(() => {
               submitButton.disabled = false;
-              submitButton.innerHTML =
-                'Enviar mensaje <i class="bi bi-caret-right-fill ms-3" style="font-size: 0.9rem"></i>';
+              submitButton.innerHTML = `${translations[lang]["send-button"]} <i class="bi bi-caret-right-fill ms-3" style="font-size: 0.9rem"></i>`;
             });
         });
+
+      function toggleLanguage() {
+        const currentLang = document.documentElement.lang;
+        const newLang = currentLang === "es" ? "en" : "es";
+        document.documentElement.lang = newLang;
+
+        document.title = translations[newLang]["page-title"];
+
+        updateTexts(newLang);
+        updateCVLinks(newLang);
+      }
+
+      function updateTexts(lang) {
+        // Actualizar todos los elementos con data-translate
+        document.querySelectorAll("[data-translate]").forEach((el) => {
+          const key = el.getAttribute("data-translate");
+          if (translations[lang][key]) {
+            if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+              el.placeholder = translations[lang][key];
+            } else if (el.hasAttribute("title")) {
+              el.title = translations[lang][key]; // Para tooltips
+            } else {
+              el.textContent = translations[lang][key]; // Usar textContent para seguridad
+            }
+          }
+        });
+
+        // Actualizar botones de idioma
+        const toggleButtons = document.querySelectorAll(
+          "#languageToggle, #languageToggleDesktop"
+        );
+        toggleButtons.forEach((button) => {
+          button.innerHTML = `<i class="bi bi-translate"></i> ${translations[lang]["language-toggle"]}`;
+        });
+      }
+
+      function updateCVLinks(lang) {
+        const cvLinks = document.querySelectorAll("a[download]");
+        cvLinks.forEach((link) => {
+          link.setAttribute("href", `pdf/DeveloperCV_${lang}.pdf`);
+        });
+      }
+
+      // Event listeners
+      document
+        .getElementById("languageToggle")
+        ?.addEventListener("click", toggleLanguage);
+      document
+        .getElementById("languageToggleDesktop")
+        ?.addEventListener("click", toggleLanguage);
+
+      // Inicializar
+      document.addEventListener("DOMContentLoaded", () => {
+        updateTexts(document.documentElement.lang);
+        updateCVLinks(document.documentElement.lang);
+      });
     </script>
     <!-- JavaScript with Popper -->
     <script
