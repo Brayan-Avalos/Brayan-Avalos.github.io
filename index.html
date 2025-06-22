@@ -1246,7 +1246,7 @@
           "happy-clients": "Clientes satisfechos",
           "download-cv": "Descargar CV",
           "years-work": "Años de <br> trabajo",
-          "projects-completed-label": "Proyectos<br>completados",
+          "projects-completed-label": "Proyectos <br> completados",
           "happy-clients-label": "Clientes <br> satisfechos",
 
           // Skills Section
@@ -1308,7 +1308,7 @@
           "happy-clients": "Happy clients",
           "download-cv": "Download CV",
           "years-work": "Years of <br> work",
-          "projects-completed-label": "Completed<br>projects",
+          "projects-completed-label": "Completed <br> projects",
           "happy-clients-label": "Happy <br> clients",
 
           // Skills Section
@@ -1404,7 +1404,12 @@
             } else if (el.hasAttribute("title")) {
               el.title = translations[lang][key]; // Para tooltips
             } else {
-              el.textContent = translations[lang][key]; // Usar textContent para seguridad
+              // Para elementos que contienen <br>, usar innerHTML
+              if (key.includes("-label") || key === "years-work") {
+                el.innerHTML = translations[lang][key];
+              } else {
+                el.textContent = translations[lang][key]; // Usar textContent para seguridad
+              }
             }
           }
         });
