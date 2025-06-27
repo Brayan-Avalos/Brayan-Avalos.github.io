@@ -28,7 +28,15 @@
 .barra-mobiles {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
+}
 
+.bi-person-circle {
+  transition: transform 0.3s;
+}
+
+.bi-person-circle:hover {
+  transform: scale(1.05);
+  color: #c267fd !important;
 }
 
 #nav-tab{
@@ -171,12 +179,6 @@ p {
 
 #sobreMi {
   padding-top: 5rem;
-}
-
-.img-sobreMi {
-  flex: 1;
-  display: flex;
-  justify-content: center;
 }
 
 .sobreMi-data {
